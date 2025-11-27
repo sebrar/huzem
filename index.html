@@ -3,29 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Linklerim</title>
+    <title>Benim Linklerim</title>
     <style>
+        /* Genel ayarlar */
         body {
-            font-family: Arial, sans-serif;
-            background: #f0f0f0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #fceabb, #f8b500);
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: flex-start;
-            min-height: 100vh;
+            padding: 30px 20px;
             margin: 0;
-            padding: 20px;
         }
 
         header {
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
         }
 
         header h1 {
+            font-size: 2.5em;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
             margin: 0;
-            font-size: 2em;
-            color: #333;
         }
 
         .links {
@@ -33,22 +33,42 @@
             flex-direction: column;
             gap: 15px;
             width: 100%;
-            max-width: 400px;
+            max-width: 500px;
         }
 
         .link-button {
             text-decoration: none;
-            background: #007BFF;
-            color: white;
-            padding: 15px;
+            color: #fff;
+            padding: 18px;
+            border-radius: 10px;
+            font-size: 1.2em;
+            font-weight: bold;
             text-align: center;
-            border-radius: 8px;
-            transition: background 0.3s;
-            font-size: 1.1em;
+            transition: transform 0.2s, box-shadow 0.2s;
         }
 
         .link-button:hover {
-            background: #0056b3;
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+        }
+
+        /* Renkler */
+        .muhendislik { background: #1abc9c; }
+        .saglik { background: #e74c3c; }
+        .spor { background: #3498db; }
+        .guzel-sanatlar { background: #9b59b6; }
+        .iktisad { background: #f39c12; }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .link-button {
+                font-size: 1em;
+                padding: 15px;
+            }
         }
     </style>
 </head>
@@ -59,10 +79,11 @@
     </header>
 
     <div class="links">
-        <a href="https://www.example1.com" class="link-button" target="_blank">Link 1</a>
-        <a href="https://www.example2.com" class="link-button" target="_blank">Link 2</a>
-        <a href="https://www.example3.com" class="link-button" target="_blank">Link 3</a>
-        <a href="https://www.example4.com" class="link-button" target="_blank">Link 4</a>
+        <a href="ben_ekleyeceğim" class="link-button muhendislik" target="_blank">Mühendislik</a>
+        <a href="ben_ekleyeceğim" class="link-button saglik" target="_blank">Sağlık</a>
+        <a href="ben_ekleyeceğim" class="link-button spor" target="_blank">Spor</a>
+        <a href="ben_ekleyeceğim" class="link-button guzel-sanatlar" target="_blank">Güzel Sanatlar</a>
+        <a href="ben_ekleyeceğim" class="link-button iktisad" target="_blank">İktisad</a>
     </div>
 
 </body>
